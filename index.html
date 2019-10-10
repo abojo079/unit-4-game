@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello Kitty Crystal Collector!</title>
+</head>
+<body>
+    <div="container">
+ <header> Hello Kitty Crystal Collector Game!!</header>   
+    <p>You will be given a random number at the start of the game.</p>
+        <p>There are four Hello Kitty Charms below. By clicking on a charm you will add a specific amount of points to your total score.</p>
+            <P>You will win the game by matching your total score to a random number, you loose the game if your total score goes above the random number.</P>
+            <p>The value of each charm is hidden from you until you click on it.</p>
+             <p>Each time when the game starts, the game will change the values of each crystal.</p>
+
+<div>
+<p id="cpRandom"></p>
+</div>
+
+<div>
+<p id="wins"></P>
+    <p id="losses"></p>
+</div>
+
+<div>
+<ul>
+    <li>
+    <image id="charm1"></image>
+    </li>
+<li>
+    <image id="charm2"></image>
+
+</li>
+<li>
+    <image id="charm3"></image>
+</li>
+
+<li>
+    <image id="charm4"></image>
+</li>
+
+<li>
+<image id="charm5"></image>
+</li>
+
+</ul>
+
+</div>
+
+<div>
+<p>Total Score is:</p>
+
+</div>
+<div id="totalScore">
+
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+
+    $(document).ready();
+
+        document.getElementById("cpRandom").innerHTML = Math.floor(Math.random() * 100) + 20;
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
