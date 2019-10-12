@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous"/>
 
 
     <title>Hello Kitty Crystal Collector!</title>
@@ -11,14 +16,15 @@
   
 </head>
 <body>
-    <div="container">
- <header> Hello Kitty Crystal Collector Game!!</header>   
+    <div class="container">
+        <div class="hktextbox">
+ <h1> Hello Kitty Character Collector Game!!</h1>   
     <p>You will be given a random number at the start of the game.</p>
         <p>There are four Hello Kitty characters below. By clicking on a character you will add a specific amount of points to your total score.</p>
             <P>You will win the game by matching your total score to a random number, you loose the game if your total score goes above the random number.</P>
             <p>The value of each character is hidden from you until you click on it.</p>
              <p>Each time when the game starts, the game will change the values of each character.</p>
-
+            </div>
 <div>
 <ul>
     <li>
@@ -37,21 +43,21 @@
 </li>
 
 <li>
-<image id="charm5" src="images/HK1image.png"></image>
+<image id="char5" src="images/HK1image.png"></image>
 </li>
 
 </ul>
 
 </div>
 
-<div class= "allScore">
-    <p id="random"></p><span id="cpRandom"></span>
-    <p id="winner">Wins:</p><span id="wins"></span>
-    <p id="looser">Losses:</p><span id="looses"></span>
-    <p id="total">Your Total Score:</p><span id="UserScore"></span>
+<div class= "allScores">
+    <p id="random"><span id="cpRandom"></span></p>
+    <p id="winner">Wins: <span id="wins"></span></p>
+    <p id="looser">Losses:<span id="looses"></span></p>
+    <p id="total">Your Total Score:<span id="userScore"></span></p>
 
 </div>
-
+</div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <script type="text/javascript">
@@ -85,9 +91,9 @@ let looses=0;
 
 //wins and losses
 
-$("#winner").html(wins);
-$("#looser").html(looses);
-$("#total").text(userScore);
+$("#wins").html(wins);
+$("#looses").html(looses);
+$("#userScore").html(userScore);
 
 
 
