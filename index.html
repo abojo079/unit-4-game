@@ -94,10 +94,27 @@ let wins=0;
 
 let looses=0; 
 
-//Clicks on different images
+  //wins v. losses
+
+  function win(){
+wins ++;
 
 $("#wins").html(wins);
+
+  }
+
+function loss(){
+looses ++;
+
 $("#looses").html(looses);
+
+
+}
+
+
+//Clicks on different images
+
+
 $("#userScore").html(userScore);
 
 $("#char1").on("click", function() {
@@ -137,6 +154,8 @@ $("#char3").on("click", function() {
         }
         else if (userScore > cpRandom){
           looses();
+          $("#looses").html(looses);
+
         }   
   });  
 
@@ -165,6 +184,10 @@ $("#char3").on("click", function() {
           looses();
         }   
   });  
+
+
+
+
 
 });
 
